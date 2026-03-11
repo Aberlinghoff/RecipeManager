@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Connection string that points to SQLite file
-DATABASE_URL = "swlite:///./recipes.db"
+DATABASE_URL = "sqlite:///./recipes.db"
 
 # Tell SQLite to allow FastAPI to run on multiple threads
 engine= create_engine(
